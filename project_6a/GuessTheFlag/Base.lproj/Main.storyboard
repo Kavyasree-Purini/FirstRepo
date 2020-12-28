@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0kh-1C-Rjb">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,34 +13,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOP-XX-Xry">
-                                <rect key="frame" x="362.5" y="171.5" width="171" height="86"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="nOP-XX-Xry" secondAttribute="height" multiplier="2:1" id="rfb-VD-w0p"/>
-                                </constraints>
+                                <rect key="frame" x="107" y="230" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTz-SH-KqW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="om6-Fr-wEZ">
-                                <rect key="frame" x="362.5" y="287.5" width="171" height="85.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="om6-Fr-wEZ" secondAttribute="height" multiplier="2:1" id="OsS-qy-QsC"/>
-                                </constraints>
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyp-W6-DTg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la6-0g-sBM">
-                                <rect key="frame" x="362.5" y="56" width="171" height="85.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="la6-0g-sBM" secondAttribute="height" multiplier="2:1" id="d0b-gX-cQf"/>
-                                </constraints>
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcA-1W-DnW"/>
@@ -52,12 +43,9 @@
                         <constraints>
                             <constraint firstItem="la6-0g-sBM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="C4j-3f-13N"/>
                             <constraint firstItem="om6-Fr-wEZ" firstAttribute="top" secondItem="nOP-XX-Xry" secondAttribute="bottom" constant="30" id="K4K-Fh-xjM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="om6-Fr-wEZ" secondAttribute="bottom" constant="20" id="RwX-P5-fVp"/>
-                            <constraint firstItem="om6-Fr-wEZ" firstAttribute="height" secondItem="nOP-XX-Xry" secondAttribute="height" id="ZNL-QF-kEx"/>
                             <constraint firstItem="la6-0g-sBM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="arE-ds-RBf"/>
                             <constraint firstItem="nOP-XX-Xry" firstAttribute="centerX" secondItem="la6-0g-sBM" secondAttribute="centerX" id="fOM-YA-JcM"/>
                             <constraint firstItem="om6-Fr-wEZ" firstAttribute="centerX" secondItem="nOP-XX-Xry" secondAttribute="centerX" id="kRI-sS-npG"/>
-                            <constraint firstItem="nOP-XX-Xry" firstAttribute="height" secondItem="la6-0g-sBM" secondAttribute="height" id="nqZ-2b-y8d"/>
                             <constraint firstItem="nOP-XX-Xry" firstAttribute="top" secondItem="la6-0g-sBM" secondAttribute="bottom" constant="30" id="q3s-KU-e6C"/>
                         </constraints>
                     </view>
@@ -78,7 +66,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0kh-1C-Rjb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fQW-tQ-xf0">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
